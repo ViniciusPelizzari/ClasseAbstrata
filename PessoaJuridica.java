@@ -1,11 +1,26 @@
+import java.util.Scanner;
+
 public class PessoaJuridica extends Pessoa {
+    // código a ser executado
+
+    public Long cnpjj() {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Digite o CNPJ: ");
+        return s.nextLong();
+    }
+
+    public String atvv() {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Digite a atividade: ");
+        return s.nextLine();
+    }
 
     private Long cnpj;
 
     private String atividade;
 
     public Long getCnpj() {
-        return cnpj;
+        return cnpj = cnpjj();
     }
 
     public void setCnpj(Long cnpj) {
@@ -13,7 +28,7 @@ public class PessoaJuridica extends Pessoa {
     }
 
     public String getAtividade() {
-        return atividade;
+        return atividade = atvv();
     }
 
     public void setAtividade(String atividade) {
@@ -57,16 +72,17 @@ public class PessoaJuridica extends Pessoa {
 
     @Override
     public String toString() {
-        return "PessoaFisica {" +
-                "cnpj =" + cnpj +
-                ", atividade ='" + atividade + '\'' +
-                ", codigo =" + codigo() +
-                ", nome ='" + nome() + '\'' +
-                ", logradouro ='" + logradouro() + '\'' +
-                ", bairro ='" + bairro() + '\'' +
-                ", cidade ='" + cidade() + '\'' +
-                ", estado ='" + estado() + '\'' +
-                ", observacao ='" + observacao() + '\'' +
+        return "PessoaJuridica{" +
+                "cnpj=" + getCnpj() +
+                ", atividade='" + getAtividade() + '\'' +
+                ", codigo=" + codigo() +
+                ", nome='" + nome() + '\'' +
+                ", logradouro='" + logradouro() + '\'' +
+                ", bairro='" + bairro() + '\'' +
+                ", cidade='" + cidade() + '\'' +
+                ", estado='" + estado() + '\'' +
+                ", observacao='" + observacao() + '\'' +
                 '}';
     }
+
 }

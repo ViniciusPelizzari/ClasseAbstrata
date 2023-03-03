@@ -13,5 +13,4 @@ public abstract class Pessoa {
     public abstract String estado();
 
     public abstract String observacao();
-
 }
