@@ -37,37 +37,37 @@ public class PessoaFisica extends Pessoa {
 
     @Override
     public Long codigo() {
-        return 1l;
+        return cdg();
     }
 
     @Override
     public String nome() {
-        return "Vinícius";
+        return nm();
     }
 
     @Override
     public String logradouro() {
-        return "Av. Tancredo Neves";
+        return lgd();
     }
 
     @Override
     public String bairro() {
-        return "Centro";
+        return br();
     }
 
     @Override
     public String cidade() {
-        return "Capitão L. Marques";
+        return cdd();
     }
 
     @Override
     public String estado() {
-        return "PR";
+        return uf();
     }
 
     @Override
     public String observacao() {
-        return "Estudante de programação";
+        return obs();
     }
 
     @Override

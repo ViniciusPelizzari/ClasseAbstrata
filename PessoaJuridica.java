@@ -3,6 +3,10 @@ import java.util.Scanner;
 public class PessoaJuridica extends Pessoa {
     // código a ser executado
 
+    private Long cnpj;
+
+    private String atividade;
+
     public Long cnpjj() {
         Scanner s = new Scanner(System.in);
         System.out.print("Digite o CNPJ: ");
@@ -14,10 +18,6 @@ public class PessoaJuridica extends Pessoa {
         System.out.print("Digite a atividade: ");
         return s.nextLine();
     }
-
-    private Long cnpj;
-
-    private String atividade;
 
     public Long getCnpj() {
         return cnpj = cnpjj();
@@ -37,51 +37,51 @@ public class PessoaJuridica extends Pessoa {
 
     @Override
     public Long codigo() {
-        return 2l;
+        return cdg();
     }
 
     @Override
     public String nome() {
-        return "Pelizzari Developers";
+        return nm();
     }
 
     @Override
     public String logradouro() {
-        return "Av. Tancredo Neves";
+        return lgd();
     }
 
     @Override
     public String bairro() {
-        return "Centro";
+        return br();
     }
 
     @Override
     public String cidade() {
-        return "Capitão L. Marques";
+        return cdd();
     }
 
     @Override
     public String estado() {
-        return "PR";
+        return uf();
     }
 
     @Override
     public String observacao() {
-        return "Empresa de desenvolvimento de Software";
+        return obs();
     }
 
     @Override
     public String toString() {
-        return "PessoaJuridica{" +
-                "cnpj=" + getCnpj() +
-                ", atividade='" + getAtividade() + '\'' +
-                ", codigo=" + codigo() +
-                ", nome='" + nome() + '\'' +
-                ", logradouro='" + logradouro() + '\'' +
-                ", bairro='" + bairro() + '\'' +
-                ", cidade='" + cidade() + '\'' +
-                ", estado='" + estado() + '\'' +
-                ", observacao='" + observacao() + '\'' +
+        return "PessoaJuridica {" +
+                "cnpj =" + getCnpj() +
+                ", atividade ='" + getAtividade() + '\'' +
+                ", codigo =" + codigo() +
+                ", nome ='" + nome() + '\'' +
+                ", logradouro ='" + logradouro() + '\'' +
+                ", bairro ='" + bairro() + '\'' +
+                ", cidade ='" + cidade() + '\'' +
+                ", estado ='" + estado() + '\'' +
+                ", observacao ='" + observacao() + '\'' +
                 '}';
     }
 
