@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class PessoaFisica extends Pessoa {
-    // código a ser executado
 
     Scanner s = new Scanner(System.in);
 
@@ -13,26 +12,6 @@ public class PessoaFisica extends Pessoa {
     public String ocp() {
         System.out.print("Digite a ocupação: ");
         return s.nextLine();
-    }
-
-    private Long cpf;
-
-    private String ocupacao;
-
-    public Long getCpf() {
-        return cpf = cpff();
-    }
-
-    public void setCpf(Long cpf) {
-        this.cpf = cpf;
-    }
-
-    public String getOcupacao() {
-        return ocupacao = ocp();
-    }
-
-    public void setOcupacao(String ocupacao) {
-        this.ocupacao = ocupacao;
     }
 
     @Override
@@ -73,8 +52,8 @@ public class PessoaFisica extends Pessoa {
     @Override
     public String toString() {
         return "PessoaFisica {" +
-                "cpf =" + getCpf() +
-                ", ocupacao ='" + getOcupacao() + '\'' +
+                "cpf =" + cpff() +
+                ", ocupacao ='" + ocp() + '\'' +
                 ", codigo =" + codigo() +
                 ", nome ='" + nome() + '\'' +
                 ", logradouro ='" + logradouro() + '\'' +

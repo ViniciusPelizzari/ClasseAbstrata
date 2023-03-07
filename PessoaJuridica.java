@@ -1,11 +1,6 @@
 import java.util.Scanner;
 
 public class PessoaJuridica extends Pessoa {
-    // código a ser executado
-
-    private Long cnpj;
-
-    private String atividade;
 
     Scanner s = new Scanner(System.in);
 
@@ -17,22 +12,6 @@ public class PessoaJuridica extends Pessoa {
     public String atvv() {
         System.out.print("Digite a atividade: ");
         return s.nextLine();
-    }
-
-    public Long getCnpj() {
-        return cnpj = cnpjj();
-    }
-
-    public void setCnpj(Long cnpj) {
-        this.cnpj = cnpj;
-    }
-
-    public String getAtividade() {
-        return atividade = atvv();
-    }
-
-    public void setAtividade(String atividade) {
-        this.atividade = atividade;
     }
 
     @Override
@@ -73,8 +52,8 @@ public class PessoaJuridica extends Pessoa {
     @Override
     public String toString() {
         return "PessoaJuridica {" +
-                "cnpj =" + getCnpj() +
-                ", atividade ='" + getAtividade() + '\'' +
+                "cnpj =" + cnpjj() +
+                ", atividade ='" + atvv() + '\'' +
                 ", codigo =" + codigo() +
                 ", nome ='" + nome() + '\'' +
                 ", logradouro ='" + logradouro() + '\'' +
