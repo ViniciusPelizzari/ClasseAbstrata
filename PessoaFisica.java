@@ -3,14 +3,14 @@ import java.util.Scanner;
 public class PessoaFisica extends Pessoa {
     // código a ser executado
 
+    Scanner s = new Scanner(System.in);
+
     public Long cpff() {
-        Scanner s = new Scanner(System.in);
         System.out.print("Digite o CPF: ");
         return s.nextLong();
     }
 
     public String ocp() {
-        Scanner s = new Scanner(System.in);
         System.out.print("Digite a ocupação: ");
         return s.nextLine();
     }

@@ -7,14 +7,14 @@ public class PessoaJuridica extends Pessoa {
 
     private String atividade;
 
+    Scanner s = new Scanner(System.in);
+
     public Long cnpjj() {
-        Scanner s = new Scanner(System.in);
         System.out.print("Digite o CNPJ: ");
         return s.nextLong();
     }
 
     public String atvv() {
-        Scanner s = new Scanner(System.in);
         System.out.print("Digite a atividade: ");
         return s.nextLine();
     }
